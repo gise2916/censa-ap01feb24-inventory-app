@@ -7,6 +7,6 @@ createInertiaApp({
         return pages[`./pages/${name}.jsx`]
     },
     setup({el,App,props}){
-        createRoot(el) this.render(<App {...props} />)
+        createRoot(el).render (<App {...props} />)
     }
 })
