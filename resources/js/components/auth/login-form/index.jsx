@@ -1,7 +1,9 @@
-export default function LoginForm() {
+import { Heading } from "@/components/ui"
+
+export default function LoginForm({ HeadingLevel = 1 }) {
     return (
         <section>
-            <h1>iniciar sesión</h1>
+            <Heading level={HeadingLevel}>Iniciar Sesión</Heading>
             <form></form>
         </section>
     )
