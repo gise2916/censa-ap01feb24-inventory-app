@@ -1,0 +1,44 @@
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+
+    .label {
+        font-size: small;
+        font-style: italic;
+    }
+}
+
+.form-input .input-group {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+
+    input {
+        flex: 1;
+        border: none;
+        padding: .25rem .5rem;
+    }
+
+    input:focus-visible {
+        outline: none;
+    }
+
+    button {
+        padding: 0;
+        border: none;
+        margin: 0;
+        background-color: transparent;
+        color: gray;
+        cursor: pointer
+    }
+}
+
+.form-input .input-group:has(inpout:focus-visible) {
+    border-width: 2px;
+}
+
+.form-input .input-group:has(button) {
+    padding-right: .5rem;
+}
